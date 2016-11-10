@@ -14,20 +14,7 @@ namespace ThomasBurkhart
 		public App()
 		{
 			// The root page of your application
-			var content = new ContentPage
-			{
-				Title = "ThomasBurkhart",
-				Content = new StackLayout
-				{
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							HorizontalTextAlignment = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
+			var content = new Burkhart();
 
 			MainPage = new NavigationPage(content);
 		}

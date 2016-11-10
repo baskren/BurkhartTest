@@ -1,5 +1,25 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ThomasBurkhart.Burkhart">
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:f9p="clr-namespace:Forms9Patch;assembly=Forms9Patch"
+		x:Class="ThomasBurkhart.Burkhart"
+		Padding="20"
+		>
 	<ContentPage.Content>
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>	
+			<f9p:MaterialButton x:Name="MaterialButton" ToggleBehavior="false" OutlineWidth="0" OutlineRadius="5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+			<f9p:ImageButton x:Name="ImageButton" ToggleBehavior="true" HeightRequest="80" Alignment="Start"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+			<f9p:MaterialButton x:Name="EnableButtons" ToggleBehavior="false" OutlineWidth="0" OutlineRadius="5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+		</Grid>
 	</ContentPage.Content>
 </ContentPage>
